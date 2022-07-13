@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<listeners>
+		<listener class-name="Cybage.Listeners"/>
+	</listeners>
+
+  <test thread-count="5" name="validateHomepage">
+    <classes>
+      <class name="Internal.CybageCorporateWebsiteReDesign.HomePage"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ValidateHome">
+  	<classes>
+  		<class name="Cybage.HomePage"/>
+  	</classes>
+  </test>
+  
+   <test thread-count="5" name="validateApptest">
+  	<classes>
+  		<class name="Internal.CybageCorporateWebsiteReDesign.AppTest"/>
+  	</classes>
+  </test>
+  
+   <test thread-count="5" name="validateCareersPage">
+  	<classes>
+  		<class name="Cybage.CareersPage"/>
+  	</classes>
+  </test>
+</suite> <!-- Suite -->
